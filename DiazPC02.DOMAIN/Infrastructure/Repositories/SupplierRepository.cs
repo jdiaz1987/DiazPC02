@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DiazPC02.DOMAIN.Core.Entities;
+using DiazPC02.DOMAIN.Core.Interfaces;
 using DiazPC02.DOMAIN.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace DiazPC02.DOMAIN.Infrastructure.Repositories
 {
-    public class SupplierRepository
+    public class SupplierRepository : ISupplierRepository
     {
         private readonly SalesContext _context;
 
